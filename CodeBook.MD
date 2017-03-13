@@ -3,12 +3,12 @@
 This dataset includes a summary of the original study described below. After taking the raw measurements in the two test and train folders the following steps were done to generate the final dataset:
 
 <ol>
-<li>Merging: in this step the train and test datasets are combined into one dataset. Rows are bound because they all represent the same valriables.  <\li>
-<li>Subject and Activity: next we added two columns to the same data set for Subject and Activity. This is an important step toward a tidy sataset because it identifies each row as to belonging to what subject and what activity. <\li>
-<li>Extracting Mean and Standard Deviation: per requirements of teh problem we then selected only those measurements related to mean or standard deviation of variables. We did so by choosing only variables whose names included "mean" or "std".  This gave us 81 variables.<\li>
+<li>Merging: in this step the train and test datasets are combined into one dataset. Rows are bound because they all represent the same valriables. 
+<li>Subject and Activity: next we added two columns to the same data set for Subject and Activity. This is an important step toward a tidy sataset because it identifies each row as to belonging to what subject and what activity.
+<li>Extracting Mean and Standard Deviation: per requirements of teh problem we then selected only those measurements related to mean or standard deviation of variables. We did so by choosing only variables whose names included "mean" or "std".  This gave us 81 variables.
 <li>Activity Names: We replaced activity codes in the data set with human readable phrases per documentation: 1:WALKING, 2:WALKING_UPSTAIRS, 3:WALKING_DOWNSTAIRS, 4:SITTING, 5:STANDING, 6:LAYING
-<li>Intuitive Names: another step toward a tidy dataset was to adjust variable names for better readability. We changes t and f to Time and Frequency. We also changed Acc to Acceleration.  <\li>
-<li>Aggregation: last step was to create a new table in which each variable in the data set was replaced with the mean per subject per activity. It gave us 180 rows (30 subjects, 6 activities) and 81 variables as selected before.  <\li>
+<li>Intuitive Names: another step toward a tidy dataset was to adjust variable names for better readability. We changes t and f to Time and Frequency. We also changed Acc to Acceleration. 
+<li>Aggregation: last step was to create a new table in which each variable in the data set was replaced with the mean per subject per activity. It gave us 180 rows (30 subjects, 6 activities) and 81 variables as selected before.
 </ol>
 
 ==================================================================
