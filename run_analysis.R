@@ -79,3 +79,4 @@ mean_per_subject_per_activity <- mean_std_measurements %>%
   group_by_(.dots=dots) %>%
   summarise_each(funs(mean))
   
+write.table(mean_per_subject_per_activity, file = "MeansPerSubjectPerActivity.txt", row.names = FALSE)
